@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Loving Memory of Nunzia Green</title>
+<meta name="description" content="A memorial page in loving memory of Nunzia Green, March 14, 1950 – June 22, 2026.">
+<meta name="robots" content="noindex, nofollow">
+
+<!--
+  ============================================================
+  HOW TO EDIT THIS PAGE
+  ============================================================
+  1. Open this file in any plain text editor (Notepad, TextEdit,
+     or right on GitHub.com using the pencil "Edit" icon).
+  2. Search for square brackets like [Full Name] and replace
+     each one with the real details. Do not remove the
+     surrounding tags, just the bracketed text itself.
+  3. To add photos: place image files in the SAME FOLDER as
+     this index.html file, named exactly:
+        portrait.jpg            (the main photo, top of page)
+        gallery-1.jpg ... gallery-6.jpg   (the photo gallery)
+     If a file is missing, that spot will just show a soft
+     placeholder reminding you to add it — nothing breaks.
+  4. Find "family@example.com" near the bottom and replace it
+     with the email address you'd like memories sent to.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,400..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper: #E6E8DE;
+    --paper-deep: #DBDED0;
+    --ink: #2B2A25;
+    --forest: #33473A;
+    --forest-deep: #233027;
+    --gold: #8C6B2E;
+    --gold-light: #D8BC7E;
+    --plum: #5B3950;
+    --cream: #F2EFE6;
+    --max: 880px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    margin:0;
+    color:var(--forest);
+  }
+  p{margin:0 0 1em;}
+  a{color:var(--gold);}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:block;
+    margin-bottom:10px;
+  }
+
+  /* ---------- top nav ---------- */
+  nav.top{
+    position:sticky; top:0; z-index:50;
+    background:rgba(230,232,222,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--gold-light);
+  }
+  nav.top .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px; gap:16px; flex-wrap:wrap;
+  }
+  nav.top .brand{
+    font-family:'Fraunces',serif; font-size:18px; color:var(--forest); white-space:nowrap;
+  }
+  nav.top ul{
+    list-style:none; display:flex; gap:22px; margin:0; padding:0;
+    overflow-x:auto;
+  }
+  nav.top a{
+    font-size:14px; font-weight:500; text-decoration:none; color:var(--ink);
+    white-space:nowrap;
+  }
+  nav.top a:hover{color:var(--gold);}
+
+  /* ---------- sprig icon ---------- */
+  .sprig{width:34px; height:48px; color:var(--gold);}
+  .sprig.large{width:120px; height:170px;}
+
+  /* ---------- hero ---------- */
+  header.hero{
+    position:relative;
+    text-align:center;
+    padding:90px 24px 70px;
+    overflow:hidden;
+  }
+  header.hero .bg-sprig{
+    position:absolute; top:-20px; left:50%;
+    transform:translateX(-50%);
+    color:var(--forest);
+    opacity:.07;
+    z-index:0;
+  }
+  header.hero .content{position:relative; z-index:1;}
+  .photo-frame{
+    width:172px; height:172px; border-radius:50%;
+    margin:0 auto 28px;
+    overflow:hidden;
+    border:3px solid var(--gold-light);
+    background:var(--paper-deep);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .photo-frame img{width:100%; height:100%; object-fit:cover; display:block;}
+  .photo-frame__hint{
+    display:none; font-size:12px; color:var(--gold); text-align:center; padding:10px;
+    font-weight:500;
+  }
+  .photo-frame--empty{border-style:dashed;}
+  .photo-frame--empty .photo-frame__hint{display:block;}
+
+  header.hero h1{
+    font-size:clamp(34px, 6vw, 56px);
+    line-height:1.1;
+  }
+  header.hero .dates{
+    margin-top:14px;
+    font-size:15px;
+    letter-spacing:.05em;
+    color:var(--gold);
+    font-weight:600;
+  }
+  header.hero .epitaph{
+    margin-top:24px;
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:20px;
+    color:var(--plum);
+    max-width:520px;
+    margin-left:auto; margin-right:auto;
+  }
+
+  /* ---------- divider ---------- */
+  .divider{
+    display:flex; align-items:center; justify-content:center; gap:18px;
+    padding:8px 24px 40px;
+    color:var(--gold-light);
+  }
+  .divider .line{height:1px; flex:1; max-width:140px; background:var(--gold-light);}
+  .divider .sprig{width:24px; height:34px;}
+
+  /* ---------- sections (generic) ---------- */
+  section{padding:20px 24px 80px;}
+  section .wrap{text-align:left;}
+  section h2{font-size:clamp(26px,4vw,36px); margin-bottom:28px;}
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.visible{opacity:1; transform:translateY(0);}
+
+  /* ---------- story ---------- */
+  #story .story-grid{
+    display:grid; grid-template-columns:1.4fr 1fr; gap:48px;
+  }
+  #story p{font-size:16.5px;}
+  #story blockquote{
+    font-family:'Fraunces',serif; font-style:italic; font-size:19px;
+    color:var(--plum); border-left:2px solid var(--gold-light);
+    padding-left:20px; margin:0;
+  }
+  @media (max-width:700px){
+    #story .story-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- gallery ---------- */
+  #gallery{background:var(--paper-deep);}
+  #gallery .hint{font-size:14px; color:var(--gold); margin-bottom:30px;}
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  @media (max-width:700px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  .polaroid{
+    background:var(--cream);
+    padding:10px 10px 16px;
+    box-shadow:0 8px 18px rgba(43,42,37,.14);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .gallery-grid > div:nth-child(odd) .polaroid{transform:rotate(-2deg);}
+  .gallery-grid > div:nth-child(even) .polaroid{transform:rotate(2deg);}
+  .polaroid:hover{transform:rotate(0) translateY(-4px); box-shadow:0 14px 26px rgba(43,42,37,.2);}
+  .polaroid .photo-frame{
+    border-radius:6px; width:100%; height:150px; border:none; margin:0 0 10px;
+  }
+  .polaroid .caption{
+    font-size:12.5px; text-align:center; color:var(--ink); opacity:.7;
+  }
+
+  /* ---------- service ---------- */
+  #service{
+    background:var(--forest);
+    color:var(--cream);
+  }
+  #service h2{color:var(--cream);}
+  #service .eyebrow{color:var(--gold-light);}
+  .service-card{
+    background:var(--forest-deep);
+    border:1px solid rgba(216,188,126,.3);
+    border-radius:8px;
+    padding:34px;
+  }
+  .service-row{
+    display:flex; gap:18px; padding:14px 0;
+    border-bottom:1px solid rgba(216,188,126,.18);
+  }
+  .service-row:last-child{border-bottom:none;}
+  .service-row .label{
+    flex:0 0 120px; font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--gold-light); font-weight:600; padding-top:2px;
+  }
+  .service-row .value{flex:1; font-size:16px;}
+  .service-note{
+    margin-top:26px; font-size:14.5px; color:var(--cream); opacity:.85;
+  }
+
+  /* ---------- memories ---------- */
+  #memories{text-align:center;}
+  #memories .wrap{text-align:center;}
+  #memories p{max-width:480px; margin:0 auto 28px; color:var(--ink);}
+  .btn{
+    display:inline-block;
+    background:var(--forest);
+    color:var(--cream);
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    padding:14px 30px;
+    border-radius:30px;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .btn:hover{background:var(--plum); transform:translateY(-2px);}
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--forest-deep);
+    color:var(--cream);
+    text-align:center;
+    padding:50px 24px 40px;
+  }
+  footer .sprig{color:var(--gold-light); margin-bottom:14px;}
+  footer .line1{font-family:'Fraunces',serif; font-style:italic; font-size:18px; margin-bottom:8px;}
+  footer .line2{font-size:13px; opacity:.7; letter-spacing:.05em;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1; transform:none; transition:none;}
+    .polaroid{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <span class="brand">Nunzia Green</span>
+    <ul>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#memories">Memories</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="sprig large bg-sprig" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 130 C 48 100, 52 70, 50 40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M50 95 C 38 88, 28 92, 20 80" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M50 75 C 62 68, 72 72, 80 60" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <path d="M50 55 C 40 48, 32 50, 26 40" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="34" r="4" fill="currentColor"/>
+    <circle cx="44" cy="28" r="4" fill="currentColor" opacity="0.85"/>
+    <circle cx="56" cy="28" r="4" fill="currentColor" opacity="0.85"/>
+    <circle cx="50" cy="22" r="4" fill="currentColor" opacity="0.85"/>
+  </svg>
+
+  <div class="content">
+    <div class="photo-frame">
+      <img src="portrait.jpg" alt="Portrait of Nunzia Green"
+           onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');">
+      <span class="photo-frame__hint">Add <code>portrait.jpg</code> next to this page</span>
+    </div>
+    <span class="eyebrow">In Loving Memory of</span>
+    <h1>Nunzia Green</h1>
+    <div class="dates">March 14, 1950 — June 22, 2026</div>
+    <p class="epitaph">"She lived the way she cooked, valuing quality above all else."</p>
+  </div>
+</header>
+
+<div class="divider">
+  <span class="line"></span>
+  <svg class="sprig" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 130 C 48 100, 52 70, 50 40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="34" r="4" fill="currentColor"/>
+    <circle cx="44" cy="28" r="4" fill="currentColor" opacity="0.85"/>
+    <circle cx="56" cy="28" r="4" fill="currentColor" opacity="0.85"/>
+    <circle cx="50" cy="22" r="4" fill="currentColor" opacity="0.85"/>
+  </svg>
+  <span class="line"></span>
+</div>
+
+<section id="story" class="reveal">
+  <div class="wrap story-grid">
+    <div>
+      <span class="eyebrow">Their Story</span>
+      <h2>A Life Remembered</h2>
+      <p>Nunzia Green, renowned amateur chef and force of nature, passed away on June 22, 2026, in North Vancouver, following a long battle with lung cancer. She leaves behind her husband, Bill Green; children Cristina Green and Daniel Green and their spouses Wade Cherrington and Beverly Tang; grandchildren Joie, Petra, and Soleste; and a freezer full of frozen delicacies. She will be remembered for her commitment to community, her generosity, her sense of humor, and her joie de vivre.</p>
+      <p>Nunzia was born Annuziata Angelucci in Genazzano, Italy, an only child to Ben and Italia Angelucci. She moved to Canada at age nine but kept a strong connection to her Italian culture and to family who remained near Rome. Her first home in Canada was Ocean Falls, B.C., where she became a strong, accomplished swimmer as part of the town's famed swim-team culture. The family later moved to Trail, B.C., in 1964, where she finished high school.</p>
+      <p>In the fall of 1968, she moved to Vancouver to study Commerce at the University of British Columbia. It was there, in the Fort Camp residence, that she met Bill Green. They married on September 2, 1972 — rightfully overshadowing Game 1 of the Canada–Russia Summit Series — and honeymooned in Europe, mostly Italy, after Nunzia's graduation in 1973.</p>
+      <p>Together they built a life that moved from Calgary to Houston and back to Calgary before settling in Vancouver in 1979. Deep Cove became her beloved home for the rest of her life. After years at home with Cristina and Daniel, she returned to work in 1988 at Eastview Elementary School, later serving as secretary at Larson and Sherwood Park, and business manager at Carson Graham and Sutherland. She believed deeply in strong public schools and was known for going the extra mile for students, families, and staff.</p>
+      <p>She brought that same energy to her community — volunteering with the Deep Cove Parent Participation Preschool, the Mount Seymour Soccer Association, the North Shore Multicultural Society, and later the Harvest Project, alongside a lifelong support of the Vancouver Symphony. While Italian food was her religion, she took great pride in mastering cuisines from every culture, and her Christmas baking was legendary. She made more than twenty trips back to Italy, especially after 2001, staying close to family in Genazzano and Cave, and to her cousin Nives Angelucci in Rome. In 2025, she and Bill spent two months living in Rome, finally getting to experience daily life there as she had always wanted.</p>
+      <p>Nunzia's hospitality and generosity left their mark on thousands of people. She always rooted for the underdog and fought for those in need. Her force of will to make the world a better place will live on through the family, friends, and acquaintances whose lives she touched.</p>
+    </div>
+    <div>
+      <blockquote>"An 8-hour drive is never too long to get the best tomatoes in BC."</blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="reveal">
+  <div class="wrap">
+    <span class="eyebrow">In Pictures</span>
+    <h2>A Few Favorite Moments</h2>
+    <p class="hint">Add your own photos by placing image files next to this page named gallery-1.jpg through gallery-6.jpg.</p>
+    <div class="gallery-grid">
+      <div><div class="polaroid">
+        <div class="photo-frame"><img src="gallery-1.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div>
+        <div class="caption">Add a caption</div>
+      </div></div>
+      <div><div class="polaroid">
+        <div class="photo-frame"><img src="gallery-2.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-2.jpg</span></div>
+        <div class="caption">Add a caption</div>
+      </div></div>
+      <div><div class="polaroid">
+        <div class="photo-frame"><img src="gallery-3.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-3.jpg</span></div>
+        <div class="caption">Add a caption</div>
+      </div></div>
+      <div><div class="polaroid">
+        <div class="photo-frame"><img src="gallery-4.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-4.jpg</span></div>
+        <div class="caption">Add a caption</div>
+      </div></div>
+      <div><div class="polaroid">
+        <div class="photo-frame"><img src="gallery-5.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-5.jpg</span></div>
+        <div class="caption">Add a caption</div>
+      </div></div>
+      <div><div class="polaroid">
+        <div class="photo-frame"><img src="gallery-6.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div>
+        <div class="caption">Add a caption</div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="service" class="reveal">
+  <div class="wrap">
+    <span class="eyebrow">Service Details</span>
+    <h2>Celebration of Life</h2>
+    <div class="service-card">
+      <div class="service-row">
+        <div class="label">Date</div>
+        <div class="value">August 29, 2026</div>
+      </div>
+      <div class="service-row">
+        <div class="label">Time</div>
+        <div class="value">To be announced</div>
+      </div>
+      <div class="service-row">
+        <div class="label">Location</div>
+        <div class="value">Boal Chapel, North Vancouver</div>
+      </div>
+    </div>
+    <p class="service-note">In lieu of flowers, please consider donating to the Harvest Project or The Lions Gate Hospital Foundation — and remember to only buy parmesan that has been aged for at least 24 months.</p>
+  </div>
+</section>
+
+<section id="memories" class="reveal">
+  <div class="wrap">
+    <span class="eyebrow">Share a Memory</span>
+    <h2>We'd Love to Hear From You</h2>
+    <p>If you have a memory, photo, or story you'd like to share with the family, we'd be glad to receive it.</p>
+    <a class="btn" href="mailto:family@example.com?subject=A%20memory%20of%20Nunzia%20Green">Send a Memory</a>
+  </div>
+</section>
+
+<footer>
+  <svg class="sprig" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50 130 C 48 100, 52 70, 50 40" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="50" cy="34" r="4" fill="currentColor"/>
+    <circle cx="44" cy="28" r="4" fill="currentColor" opacity="0.85"/>
+    <circle cx="56" cy="28" r="4" fill="currentColor" opacity="0.85"/>
+    <circle cx="50" cy="22" r="4" fill="currentColor" opacity="0.85"/>
+  </svg>
+  <div class="line1">Forever in our hearts.</div>
+  <div class="line2">Nunzia Green · 1950 – 2026</div>
+</footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const targets = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    targets.forEach(t => obs.observe(t));
+  } else {
+    document.querySelectorAll('.reveal').forEach(t => t.classList.add('visible'));
+  }
+</script>
+
+</body>
+</html>
