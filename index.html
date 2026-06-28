@@ -308,11 +308,13 @@
   </svg>
 
   <div class="content">
-    <div class="photo-frame">
-      <img src="portrait.jpg" alt="Portrait of Nunzia Green"
-           onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');">
-      <span class="photo-frame__hint">Add <code>portrait.jpg</code> next to this page</span>
-    </div>
+      <a class="photo-link" href="portrait.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo">
+        <div class="photo-frame">
+          <img src="portrait.jpg" alt="Portrait of Nunzia Green"
+               onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');">
+          <span class="photo-frame__hint">Add <code>portrait.jpg</code> next to this page</span>
+        </div>
+      </a>
     <span class="eyebrow">In Loving Memory of</span>
     <h1>Nunzia Green</h1>
     <div class="dates">March 14, 1950 — June 22, 2026</div>
