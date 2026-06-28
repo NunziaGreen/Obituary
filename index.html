@@ -210,6 +210,11 @@
     background:var(--cream);
   }
   .polaroid .photo-frame img{object-fit:contain;}
+  .photo-link{
+    display:block; text-decoration:none; color:inherit; cursor:pointer;
+  }
+  .photo-link .photo-frame img{transition:transform .3s ease;}
+  .photo-link:hover .photo-frame img{transform:scale(1.06);}
   .polaroid .caption{
     font-size:12.5px; text-align:center; color:var(--ink); opacity:.7;
   }
@@ -330,8 +335,7 @@
 <section id="story" class="reveal">
   <div class="wrap story-grid">
     <div>
-      <span class="eyebrow">Their Story</span>
-      <h2>A Life Remembered</h2>
+      <h2>Nunzia Remembered</h2>
       <p>Nunzia Green, renowned amateur chef and force of nature, passed away on June 22 in North Vancouver, following a long battle with lung cancer. She leaves behind her husband, Bill Green; children Cristina Green and Daniel Green and their spouses Wade Cherrington and Beverly Tang; grandchildren Joie, Petra, and Soleste; and a freezer full of frozen delicacies. She will be remembered for her commitment to the community, her generosity, her sense of humor, and her joie de vivre. She lived the way she cooked, valuing quality above all else.</p>
       <p>Nunzia was born Annuziata Angelucci in Genazzano, Italy, as an only child to Ben and Italia Angelucci. Although she moved to Canada at the age of nine, she kept a strong connection to her Italian culture and to family who remained in the region surrounding Rome.</p>
       <p>Her first home in Canada was Ocean Falls, British Columbia, a small community with a remarkable swimming tradition. As a young girl, she became a strong and accomplished swimmer and was part of the Ocean Falls swim-team culture that would soon become famous. She later moved to Trail, B.C., in 1964, where she attended high school.</p>
@@ -342,11 +346,8 @@
       <p>She was a passionate chef and lover of great food. She believed deeply that great food comes from letting quality ingredients shine, and that an 8-hour drive is never too long to get the best tomatoes in BC. Italian food was her religion, but she took great pride in learning how to cook foods from all cultures and traditions. Her Christmas baking was legendary, both in its diversity and sophistication. She had a legion of fans around the world.</p>
       <p>Over the years she made more than 20 trips to Italy, primarily after 2001. She was close to her family in Genazzano and Cave, and especially to her cousin Nives Angelucci in Rome. Bill and Nunzia were particularly fortunate to spend two months in Italy in 2025, where she got to experience daily life in Rome, rather than just visiting, as she had always wanted to do.</p>
       <p>Nunzia's hospitality and generosity left their mark on thousands of people. She always rooted for the underdog and fought for people in need. Her force of will to make the world a better place will be remembered and will live on through family, friends, and acquaintances whose lives she touched.</p>
-      <p>A celebration of life will be held at Boal Chapel in North Vancouver on August 29, 2026.</p>
+      <p>A celebration of life will be held at Boal Chapel in North Vancouver at 2pm on August 29, 2026.</p>
       <p>In lieu of flowers, please consider donating to the <a href="https://www.harvestproject.org/donate/" target="_blank" rel="noopener noreferrer">Harvest Project</a> or <a href="https://lghfoundation.com/donate/" target="_blank" rel="noopener noreferrer">The Lions Gate Hospital Foundation</a>, and remember to only buy parmesan that has been aged for at least 24 months.</p>
-    </div>
-    <div>
-      <blockquote>"An 8-hour drive is never too long to get the best tomatoes in BC."</blockquote>
     </div>
   </div>
 </section>
@@ -357,60 +358,60 @@
     <h2>A Few Favorite Moments</h2>
     <div class="gallery-grid">
         <div><div class="polaroid">
-          <div class="photo-frame"><img src="1955.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div>
+          <a class="photo-link" href="1955.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1955.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div></a>
           <div class="caption"> Genazzano, Italy - 1955</div>
         </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1961.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div>
+        <a class="photo-link" href="1961.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1961.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div></a>
         <div class="caption"> Ocean Falls, BC - 1961</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1967.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-2.jpg</span></div>
+        <a class="photo-link" href="1967.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1967.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-2.jpg</span></div></a>
         <div class="caption">Trail, BC - 1967</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1972.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-3.jpg</span></div>
+        <a class="photo-link" href="1972.JPG" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1972.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-3.jpg</span></div></a>
         <div class="caption">Wedding Trail, BC - 1972</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1976.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-4.jpg</span></div>
+        <a class="photo-link" href="1976.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1976.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-4.jpg</span></div></a>
         <div class="caption">Houston, TX - 1976</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1986b.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-5.jpg</span></div>
+        <a class="photo-link" href="1986b.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1986b.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-5.jpg</span></div></a>
         <div class="caption">Rome, Italy - 1986</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1992.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div>
+        <a class="photo-link" href="1992.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1992.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-1.jpg</span></div></a>
         <div class="caption"> Grand Canyon, AZ - 1992</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="1994.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-2.jpg</span></div>
+        <a class="photo-link" href="1994.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="1994.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-2.jpg</span></div></a>
         <div class="caption">Deep Cove, BC - 1994</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="2001.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-4.jpg</span></div>
+        <a class="photo-link" href="2001.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="2001.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-4.jpg</span></div></a>
         <div class="caption">Deep Cove, BC - 2001: Success with Pies! </div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="2004.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-5.jpg</span></div>
+        <a class="photo-link" href="2004.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="2004.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-5.jpg</span></div></a>
         <div class="caption">UBC - 2004</div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="2009.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div>
+        <a class="photo-link" href="2009.JPG" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="2009.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div></a>
         <div class="caption">Genazzano, Italy - 2009 : Her favorite Pizza </div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="2011.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div>
+        <a class="photo-link" href="2011.JPG" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="2011.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div></a>
         <div class="caption">Genazzano, Italy - 2011  </div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="2017.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div>
+        <a class="photo-link" href="2017.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="2017.jpg" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div></a>
         <div class="caption"> Sonoma, CA - 2017 </div>
       </div></div>
       <div><div class="polaroid">
-        <div class="photo-frame"><img src="2019.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div>
-        <div class="caption">Italy - 2019  </div>
+        <a class="photo-link" href="2019.JPG" target="_blank" rel="noopener noreferrer" aria-label="View full-size photo"><div class="photo-frame"><img src="2019.JPG" alt="" onerror="this.style.display='none'; this.parentElement.classList.add('photo-frame--empty');"><span class="photo-frame__hint">gallery-6.jpg</span></div></a>
+        <div class="caption">Spain - 2019  </div>
       </div></div>
     </div>
   </div>
@@ -427,7 +428,7 @@
       </div>
       <div class="service-row">
         <div class="label">Time</div>
-        <div class="value">To be announced</div>
+        <div class="value">2pm</div>
       </div>
       <div class="service-row">
         <div class="label">Location</div>
